@@ -2,18 +2,33 @@ SkiLessons = new Mongo.Collection('skiLessons');
 
 SkiLessons.attachSchema(new SimpleSchema({
   date: {
-    type: String,
+    type: Date,
     label: "Date",
-    allowedValues: ['Saturday', 'Sunday'],
-    max: 100
+    optional: true
+    
   },
   location: {
     type: String,
     label: "Ski resort",
     allowedValues: ['Mont Cascade','Mont Ste-Marie','Calabogie'],
+  },
+  
+  firstName: {
+    type: String,
+    label: "First Name",
+    max:100
+  },
+  lastName: {
+    type: String,
+    label: "Last Name",
     max: 100
   },
-  skiType: {
+  age: {
+    type: Number,
+    label: "Age",
+    min: 0,
+    max: 99
+  },skiType: {
     type: String,
     label: "Ski type",
     allowedValues: ['Ski', 'Snowboard'],
