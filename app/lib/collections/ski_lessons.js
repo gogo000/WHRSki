@@ -10,6 +10,7 @@ SkiLessons.attachSchema(new SimpleSchema({
   location: {
     type: String,
     label: "Ski resort",
+    allowedValues: ['Mont Cascade','Mont Ste-Marie','Calabogie'],
     max: 100
   },
   skiType: {
