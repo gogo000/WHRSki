@@ -10,7 +10,8 @@ Template.SelectLesson.events({
 Template.SelectLesson.helpers({
 	lessons: function() {
     	return SkiLessons.find();//using data base query
-  	}
+  	},
+  	selectDateData: ['Foo', 'Bar', 'Baz']
 });
 
 /*****************************************************************************/
