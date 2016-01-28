@@ -41,17 +41,31 @@
 	    </tbody>
 	  </table>
 
-{{#dropdownTrigger name="selectDate" }}
-  <button>Select Date</button>
-{{/dropdownTrigger}}
+	{{#dropdownTrigger name="selectDate" }}
+	  <button>Select Date</button>
+	{{/dropdownTrigger}}
 
-{{#dropdown name="selectDate"}}
-      <ul class="dropdown__menu">
-      {{#each selectDateData}}
-        <li role="menuItem"><a href="#">{{this}}</a></li>
-      {{/each}}
-    </ul>
-{{/dropdown}}
+	{{#dropdown name="selectDate"}}
+	      <ul class="dropdown__menu">
+	      {{#each selectDateData}}
+	        <li role="menuItem"><a href="#">{{date}}</a></li>
+	      {{/each}}
+	    </ul>
+	{{/dropdown}}
 	  	
+	{{#dropdownTrigger name="selectLocation" }}
+	  <button>Select Location</button>
+	{{/dropdownTrigger}}
+
+	{{#dropdown name="selectLocation"}}
+	      <ul class="dropdown__menu">
+	      {{#each selectLocationData}}
+	        <li role="menuItem"><a href="#">{{location}}</a></li>
+	      {{/each}}
+	    </ul>
+	{{/dropdown}}
+
+
+
   </div>
 </template>

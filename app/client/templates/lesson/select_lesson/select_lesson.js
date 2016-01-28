@@ -11,7 +11,12 @@ Template.SelectLesson.helpers({
 	lessons: function() {
     	return SkiLessons.find();//using data base query
   	},
-  	selectDateData: ['Foo', 'Bar', 'Baz']
+  	selectDateData: function() {
+    	return SkiLessons.find();//using data base query
+  	},
+  	selectLocationData: function() {
+    	return SkiLessons.find();//using data base query
+  	},
 });
 
 /*****************************************************************************/
